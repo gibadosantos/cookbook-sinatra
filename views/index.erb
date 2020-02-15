@@ -1,0 +1,10 @@
+<a href="/new">Create</a>
+
+<ul>
+ <% @recipes.each_with_index do |recipe, index| %>
+    <li>
+        <%= recipe.name %>
+        <a href="/recipe/<%= index %> ">x</a>
+    </li>
+ <% end %>
+</ul>
